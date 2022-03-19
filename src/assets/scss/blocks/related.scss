@@ -1,0 +1,43 @@
+.related {
+    padding-bottom: .5rem;
+    border-bottom: 1px solid $white;
+} 
+
+.related__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include breakpoint($mobile-bp) {
+        flex-direction: column;
+    }
+
+}
+
+.related__list-item {
+    margin-bottom: 2.5rem;
+    width: 50%;
+
+    @include breakpoint($mobile-bp) {
+        width: 100%;
+    }
+}
+
+.related__list-title {
+    color: #F3EBA2;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+    a {
+        color: inherit;  
+    }
+}
+
+.related__list-date {
+    font-size: 1.2rem;
+    color: $white;
+    opacity: .6;
+}
+
